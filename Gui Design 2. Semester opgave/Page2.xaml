@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Gui_Design_2.Semester_opgave.MainPage"
+    x:Class="Gui_Design_2.Semester_opgave.Page2"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Gui_Design_2.Semester_opgave"
@@ -10,9 +10,16 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" Text="User_Name" VerticalAlignment="Top" Width="150" Height="50" FontSize="24"/>
         <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71"/>
-        <Button x:Name="button1" Content="Kalender" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65"/>
         <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="40,350,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65"/>
         <Button x:Name="button3" Content="Brugere" HorizontalAlignment="Left" Margin="40,570,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="158" Margin="63,60,0,0" VerticalAlignment="Top" Width="327"/>
+        <Button x:Name="button4" HorizontalAlignment="Left" Margin="63,60,0,0" VerticalAlignment="Top" Height="158" Width="327">
+            <Button x:Name="button7" Content="Settings" HorizontalAlignment="Left" Margin="-116.4,29.6,-118.8,-39.2" VerticalAlignment="Top" Height="46" Width="270
+                    " FontSize="20"/>
+        </Button>
+        <Button x:Name="button5" Content="" HorizontalAlignment="Left" Margin="63,60,0,0" VerticalAlignment="Top" Height="70" Width="327"/>
+        <Button x:Name="button6" Content="Opret" HorizontalAlignment="Left" Margin="93,84,0,0" VerticalAlignment="Top" Height="46" Width="270" FontSize="20"/>
 
     </Grid>
 </Page>
