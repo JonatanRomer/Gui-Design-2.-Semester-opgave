@@ -13,23 +13,23 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Gui_Design_2.Semester_opgave
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage2 : Page
     {
-        public MainPage()
+        public MainPage2()
         {
             this.InitializeComponent();
         }
 
         private void Buttom_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage2), null);
+            this.Frame.Navigate(typeof(MainPage), null);
         }
 
         private void Buttom_Click_2(object sender, RoutedEventArgs e)
@@ -45,6 +45,16 @@ namespace Gui_Design_2.Semester_opgave
         private void Buttom_Click_4(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Brugere1), null);
+        }
+
+        private void Buttom_Click_5(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Opret1), null);
+        }
+
+        private void Buttom_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Påmindelser), null);
         }
     }
 }
