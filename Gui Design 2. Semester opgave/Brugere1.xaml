@@ -8,9 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" Text="   Brugere" VerticalAlignment="Top" Width="150" Height="50" FontSize="24"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_2"/>
-        <Button x:Name="button_Copy" Content="&lt;--" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_1"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="39,90,0,0" TextWrapping="Wrap" Text="*Admins*" VerticalAlignment="Top" Width="109" Height="33" FontWeight="Bold" FontSize="20"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,107,0,0" TextWrapping="Wrap" Text="__________________________________________________________________" VerticalAlignment="Top" Width="412"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="140,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="150" PlaceholderText="  Admin" FontSize="30"/>
@@ -20,7 +17,11 @@
         <TextBox x:Name="textBox2_Copy2" HorizontalAlignment="Left" Margin="39,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="351" Height="50" FontSize="30" PlaceholderText="         *extra* Email"/>
         <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="10,416,0,0" TextWrapping="Wrap" Text="__________________________________________________________________" VerticalAlignment="Top" Width="412"/>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="200" Margin="39,452,0,0" VerticalAlignment="Top" Width="351" BorderThickness="2" BorderBrush="Black"/>
-        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="140,686,0,0" VerticalAlignment="Top" Height="50" Width="150" FontSize="30"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Padding="0,0,0,10" Margin="140,675,0,0" VerticalAlignment="Top" Height="61" Width="150" FontSize="40" Background="#59256FB4"/>
+        <Rectangle Fill="#59256FB4" HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="432"/>
+        <Button x:Name="button" Content="≡" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Padding="0,0,0,14" Click="Buttom_Click_1" Background="#00000000" FontSize="40" Margin="347,0,0,0" Width="85"/>
+        <Button x:Name="button_Copy" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,14" Height="60" Width="85" Click="Buttom_Click_2" Background="#00000000" FontSize="40"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="128,5,0,0" TextWrapping="Wrap" Text="   Bruger" VerticalAlignment="Top" Width="160" Height="62" FontSize="30" Background="Transparent" BorderBrush="#007A7A7A"/>
 
     </Grid>
 </Page>

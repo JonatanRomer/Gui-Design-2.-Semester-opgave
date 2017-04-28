@@ -28,17 +28,22 @@ namespace Gui_Design_2.Semester_opgave
         }
         private void Buttom_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage), null);
+            this.Frame.Navigate(typeof(MainePage_Beta_2), null);
         }
 
         private void Buttom_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage2), null);
+            this.Frame.Navigate(typeof(MainPage_Beta), null);
         }
 
         private void Buttom_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage), null);
+            this.Frame.Navigate(typeof(MainPage_Beta), null);
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

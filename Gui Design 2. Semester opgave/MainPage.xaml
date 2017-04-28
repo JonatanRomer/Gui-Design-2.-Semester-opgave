@@ -8,14 +8,14 @@
     x:Class="Gui_Design_2.Semester_opgave.MainPage"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FFE5E5E3">
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" Text="User_Name" VerticalAlignment="Top" Width="150" Height="50" FontSize="24"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_1"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_1" Background="#59256FB4"/>
 
-        <Button x:Name="button1" Content="Kalender" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_2"/>
+        <Button x:Name="button1" Content="Kalender" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_2" Background="#3F0864A5" BorderBrush="#FF0795F9"/>
 
-        <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="40,350,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_3"/>
+        <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="40,350,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_3" Background="#3F0864A5" BorderBrush="#FF0795F9"/>
         
-        <Button x:Name="button3" Content="Brugere" HorizontalAlignment="Left" Margin="40,570,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_4"/>
+        <Button x:Name="button3" Content="Brugere" HorizontalAlignment="Left" Margin="40,570,0,0" VerticalAlignment="Top" Height="130" Width="350" FontSize="65" Click="Buttom_Click_4" BorderBrush="#FF0795F9" Background="#3F0864A5"/>
     </Grid>
 </Page>

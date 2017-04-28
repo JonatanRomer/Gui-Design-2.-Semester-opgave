@@ -9,14 +9,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <Button x:Name="button" Content="&lt;--" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_1">
-
-        </Button>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_2">
-
-        </Button>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" Text="Påmindelser" VerticalAlignment="Top" Height="50" Width="150" FontSize="24" />
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="39,82,0,0" TextWrapping="Wrap" Text="Tidspunketer:" VerticalAlignment="Top" Height="50" Width="205" FontWeight="Bold" FontSize="30"/>
         <CheckBox x:Name="checkBox" Content="8 Uger Før" HorizontalAlignment="Left" Margin="100,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <CheckBox.RenderTransform>
@@ -59,7 +51,11 @@
                 <CompositeTransform ScaleX="2" ScaleY="2"/>
             </CheckBox.RenderTransform>
         </CheckBox>
-        <Button x:Name="button2" Content="Ok" HorizontalAlignment="Left" Margin="150,680,0,0" VerticalAlignment="Top" Height="59" Width="140" FontSize="30" Click="Buttom_Click_3"/>
+        <Button x:Name="button2" Content="Ok" HorizontalAlignment="Left" Padding="0,0,0,10"  Margin="150,680,0,0" VerticalAlignment="Top" Height="59" Width="140" FontSize="40" Click="Buttom_Click_3" Background="#59256FB4"/>
+        <Rectangle Fill="#59256FB4" HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="432"/>
+        <Button x:Name="button" Content="≡" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Padding="0,0,0,14" Click="Buttom_Click_1" Background="#00000000" FontSize="40" Margin="347,0,0,0" Width="85"/>
+        <Button x:Name="button_Copy" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,14" Height="60" Width="85" Click="Buttom_Click_2" Background="#00000000" FontSize="40"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="126,5,0,0" TextWrapping="Wrap" Text="Påmindelser" VerticalAlignment="Top" Height="50" Width="202" FontSize="30" Background="Transparent" BorderBrush="#007A7A7A" />
 
     </Grid>
 </Page>

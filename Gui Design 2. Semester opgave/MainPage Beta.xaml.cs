@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+//using System.Reflection;
+//using System.IO;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -20,12 +22,27 @@ namespace Gui_Design_2.Semester_opgave
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Påmindelser : Page
+    public sealed partial class MainPage_Beta : Page
     {
-        public Påmindelser()
+        public MainPage_Beta()
         {
             this.InitializeComponent();
         }
+
+        /*private void Form1_Load(System.Object sender, System.EventArgs e)
+        {
+            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
+            Stream myStream = myAssembly.GetManifestResourceStream("Gui_Design_2.Semester_opgave.Logo_media.png");
+            Bitmap image = new Bitmap(myStream);
+
+            this.ClientSize = new Size(image.Width, image.Height);
+
+            PictureBox pb = new PictureBox();
+            pd.Image = this.image;
+            pd.Dock = Dockstyle.Fill;
+            this.Controls.Add(pb);
+        }*/
+
         private void Buttom_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainePage_Beta_2), null);
@@ -33,12 +50,7 @@ namespace Gui_Design_2.Semester_opgave
 
         private void Buttom_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage_Beta), null);
-        }
-
-        private void Buttom_Click_3(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage_Beta), null);
+            this.Frame.Navigate(typeof(Opret1), null);
         }
     }
 }

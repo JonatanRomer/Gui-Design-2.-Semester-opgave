@@ -20,25 +20,39 @@ namespace Gui_Design_2.Semester_opgave
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Påmindelser : Page
+    public sealed partial class MainePage_Beta_2 : Page
     {
-        public Påmindelser()
+        public MainePage_Beta_2()
         {
             this.InitializeComponent();
         }
+
         private void Buttom_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainePage_Beta_2), null);
+            this.Frame.Navigate(typeof(MainPage_Beta), null);
         }
 
         private void Buttom_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage_Beta), null);
+            this.Frame.Navigate(typeof(Opret1), null);
         }
-
         private void Buttom_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage_Beta), null);
+            this.Frame.Navigate(typeof(Påmindelser), null);
+        }
+
+        private void Buttom_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Kalender1), null);
+        }
+        private void Buttom_Click_5(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Register1), null);
+        }
+
+        private void Buttom_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Brugere1), null);
         }
     }
 }

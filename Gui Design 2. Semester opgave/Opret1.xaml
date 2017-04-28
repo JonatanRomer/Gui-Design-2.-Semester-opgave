@@ -8,9 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" Text="     Opret" VerticalAlignment="Top" Width="150" Height="50" FontSize="24"/>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_2"/>
-        <Button x:Name="button_Copy" Content="&lt;--" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Height="50" Width="71" Click="Buttom_Click_1"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,159,42,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="345" FontSize="30">
             <Run Text="            "/>
             <Run Text="  "/>
@@ -25,8 +22,12 @@
             <Run/>
         </TextBlock>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="45,431,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Height="72"/>
-        <Button x:Name="button1" Content="Ok" HorizontalAlignment="Left" Margin="45,615,0,0" VerticalAlignment="Top" Height="80" Width="160" FontSize="50" Click="Buttom_Click_3"/>
-        <Button x:Name="button2" Content="Clear" HorizontalAlignment="Left" Margin="230,615,0,0" VerticalAlignment="Top" Height="80" Width="160" FontSize="50"/>
+        <Button x:Name="button1" Content="Ok" HorizontalAlignment="Left" Margin="45,615,0,0" VerticalAlignment="Top" Height="80" Width="160" FontSize="40" Click="Buttom_Click_3" Background="#59256FB4"/>
+        <Button x:Name="button2" Content="Clear" HorizontalAlignment="Left" Margin="230,615,0,0" VerticalAlignment="Top" Height="80" Width="160" FontSize="40" Background="#59256FB4"/>
+        <Rectangle Fill="#59256FB4" HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="432"/>
+        <Button x:Name="button" Content="≡" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Padding="0,0,0,14" Click="Buttom_Click_1" Background="#00000000" FontSize="40" Margin="347,0,0,0" Width="85"/>
+        <Button x:Name="button_Copy" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,14" Height="60" Width="85" Click="Buttom_Click_2" Background="#00000000" FontSize="40"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="178,10,0,0" TextWrapping="Wrap" Text="Opret" VerticalAlignment="Top" Height="50" Width="99" FontSize="30"/>
 
     </Grid>
 </Page>
