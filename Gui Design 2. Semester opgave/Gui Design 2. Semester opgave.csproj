@@ -113,6 +113,7 @@
     <Compile Include="MainPage2.xaml.cs">
       <DependentUpon>MainPage2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Opret1.xaml.cs">
       <DependentUpon>Opret1.xaml</DependentUpon>
     </Compile>
@@ -120,9 +121,14 @@
     <Compile Include="Påmindelser.xaml.cs">
       <DependentUpon>Påmindelser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Påmindelser2.xaml.cs">
+      <DependentUpon>Påmindelser2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Register1.xaml.cs">
       <DependentUpon>Register1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Viewmodels\MainViewModel.cs" />
+    <Compile Include="Viewmodels\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -180,14 +186,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Påmindelser2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Register1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Billeder\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
