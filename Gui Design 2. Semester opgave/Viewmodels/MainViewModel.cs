@@ -32,10 +32,11 @@ namespace Gui_Design_2.Semester_opgave.Viewmodels
         private List<MenuItem> GetMenuItems()
         {
             List<MenuItem> menuItems = new List<MenuItem>();
-            menuItems.Add(new MenuItem() { Title = "Påmindelser", NavigateTo = typeof(Påmindelser) });
+            menuItems.Add(new MenuItem() { Title = "Startside", NavigateTo = typeof(MainPage_Beta) });
+            menuItems.Add(new MenuItem() { Title = "Påmindelser", NavigateTo = typeof(Påmindelser2) });
             menuItems.Add(new MenuItem() { Title = "Kalender", NavigateTo = typeof(Kalender1) });
             menuItems.Add(new MenuItem() { Title = "Historik", NavigateTo = typeof(Register1) });
-            menuItems.Add(new MenuItem() { Title = "Bruger", NavigateTo = typeof(Brugere1) });
+            
 
             return menuItems;
         }

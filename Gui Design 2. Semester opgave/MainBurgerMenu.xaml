@@ -49,24 +49,27 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <Grid.DataContext>
-            <Viewmodels:ViewModelLocator/>
-        </Grid.DataContext>
-        
-        <Frame x:Name="frameContent" HorizontalAlignment="Left" VerticalAlignment="Top" Height="580" Width="964" Grid.Row="1" Grid.Column="1">
-            <Grid HorizontalAlignment="Left" Height="60" Margin="0,-60,0,0" VerticalAlignment="Top" Width="964" Background="#59256FB4"/>
-        </Frame>
-        <ToggleButton x:Name="TogglePaneButton"
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid 
+                  HorizontalAlignment="Left" 
+                  Height="60" 
+                  VerticalAlignment="Top" 
+                  Width="964" 
+                  Background="#59256FB4" Grid.Column="1">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding SelectedMenuItem.Title}" VerticalAlignment="Top" Height="40" Width="200" FontSize="30" FocusVisualPrimaryBrush="Black" Foreground="White" FocusVisualSecondaryBrush="#99FFFFFF"/>
+            </Grid>
+
+            <ToggleButton x:Name="TogglePaneButton"
                           FontSize="40"
                           TabIndex="1"
                           Style="{StaticResource SplitViewTogglePaneButtonStyle}"
@@ -74,8 +77,10 @@
                           AutomationProperties.Name="Menu"
                           ToolTipService.ToolTip="Menu" 
                           Background="#59256FB4" Height="60" Width="60"/>
-        
-        
+
+        </Grid>
+
+
         <SplitView Name="NavigationPane" HorizontalAlignment="Left" Height="580" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="1024">
             <SplitView.Pane>
                 <ListView x:Name="LeftMenu"
