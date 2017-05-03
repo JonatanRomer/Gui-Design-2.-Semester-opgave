@@ -8,13 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#59256FB4" HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="432"/>
-        <Button x:Name="button" Content="≡" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Padding="0,0,0,14" Click="Buttom_Click_1" Background="#00000000" FontSize="40" Margin="347,0,0,0" Width="85"/>
-        <Button x:Name="button_Copy" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0,0,0,14" Height="60" Width="85" Click="Buttom_Click_2" Background="#00000000" FontSize="40"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="125,5,0,0" TextWrapping="Wrap" Text="   Kalender" VerticalAlignment="Top" Width="182" Height="50" FontSize="30" BorderBrush="#007A7A7A" Background="Transparent"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="515" Margin="36,97,0,0" VerticalAlignment="Top" Width="360" BorderBrush="#7F256FB4" Background="#FFBED7EE" BorderThickness="2"/>
-        <Button x:Name="button1" Content="Taget" HorizontalAlignment="Left" Margin="36,649,0,0" VerticalAlignment="Top" Height="80" Width="160" Background="#59256FB4" FontSize="40"/>
-        <Button x:Name="button2" Content="Afvis" HorizontalAlignment="Left" Margin="236,649,0,0" VerticalAlignment="Top" Height="80" Width="160" Background="#59256FB4" FontSize="40"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="428" Margin="30,39,0,0" VerticalAlignment="Top" Width="299" BorderBrush="#7F256FB4" Background="#FFBED7EE" BorderThickness="2"/>
+        <Button x:Name="button1" Content="Taget" HorizontalAlignment="Left" Margin="30,498,0,0" VerticalAlignment="Top" Height="66" Width="133" Background="#59256FB4" FontSize="40"/>
+        <Button x:Name="button2" Content="Afvis" HorizontalAlignment="Left" Margin="196,498,0,0" VerticalAlignment="Top" Height="66" Width="133" Background="#59256FB4" FontSize="40"/>
 
     </Grid>
 </Page>
