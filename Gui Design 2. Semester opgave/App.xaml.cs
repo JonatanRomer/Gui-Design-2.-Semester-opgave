@@ -72,7 +72,7 @@ namespace Gui_Design_2.Semester_opgave
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage_Beta), e.Arguments);
+                    rootFrame.Navigate(typeof(MainBurgerMenu), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

@@ -20,7 +20,7 @@
         <Button x:Name="button2" Content="Påmindelser" HorizontalAlignment="Left" Margin="134,90,0,0" Click="Buttom_Click_3" VerticalAlignment="Top" Height="50" Width="260" FontSize="20" Background="#59256FB4"/>
         <Button x:Name="button3" Content="Kalender" HorizontalAlignment="Left" Margin="134,172,0,0" Click="Buttom_Click_4" VerticalAlignment="Top" Width="260" Height="50" FontSize="20" Background="#59256FB4"/>
         <Button x:Name="button4" Content="Historik" HorizontalAlignment="Left" Margin="134,257,0,0" Click="Buttom_Click_5" VerticalAlignment="Top" Width="260" Height="50" FontSize="20" Background="#59256FB4"/>
-        <Button x:Name="button5" Content="Bruger" HorizontalAlignment="Left" Margin="134,344,0,0" Click="Buttom_Click_6" VerticalAlignment="Top" RenderTransformOrigin="0.529,0.581" Width="260" Height="50" FontSize="20" Background="#59256FB4"/>
+        <Button x:Name="button5" Content="Bruger" HorizontalAlignment="Left" Margin="134,344,0,0" Click="Buttom_Click_6" VerticalAlignment="Top" RenderTransformOrigin="0.529,0.581" Width="260" Height="50" FontSize="20" Background="#FF4F8BC2"/>
 
     </Grid>
 </Page>

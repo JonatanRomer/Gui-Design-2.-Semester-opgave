@@ -3,6 +3,16 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Gui_Design_2.Semester_opgave"
-    RequestedTheme="Light">
+    RequestedTheme="Light"
+    xmlns:vm="using:Gui_Design_2.Semester_opgave.Viewmodels">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <vm:ViewModelLocator x:Key="ViewModelLocator" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
 </Application>
