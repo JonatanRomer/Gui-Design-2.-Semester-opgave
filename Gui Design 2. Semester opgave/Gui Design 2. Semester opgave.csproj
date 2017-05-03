@@ -117,6 +117,8 @@
       <DependentUpon>MainPage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\OpretKnapItem.cs" />
+    <Compile Include="Models\PåmidelserKnapItem.cs" />
     <Compile Include="Opret1.xaml.cs">
       <DependentUpon>Opret1.xaml</DependentUpon>
     </Compile>

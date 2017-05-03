@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Gui_Design_2.Semester_opgave.Models;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,7 +27,7 @@ namespace Gui_Design_2.Semester_opgave
         {
             this.InitializeComponent();
         }
-
+        
         private void Buttom_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainePage_Beta_2), null);
@@ -39,7 +40,8 @@ namespace Gui_Design_2.Semester_opgave
 
         private void Buttom_Click_3(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Påmindelser), null);
+            this.Frame.Navigate(typeof(Påmindelser2), null);
         }
-    }
+        
+}
 }

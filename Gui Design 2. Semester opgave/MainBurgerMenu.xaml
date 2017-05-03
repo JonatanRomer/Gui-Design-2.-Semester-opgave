@@ -106,11 +106,11 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
-                                    <SymbolIcon Symbol="{Binding SymbolIcon}"
+                                    <!--<SymbolIcon Symbol="{Binding SymbolIcon}"
                                                 Grid.Column="0"
                                                 VerticalAlignment="Center"
                                                 HorizontalAlignment="Center"
-                                                ToolTipService.ToolTip="{Binding Title}" />
+                                                ToolTipService.ToolTip="{Binding Title}" />-->
 
                                     <TextBlock Grid.Column="1"
                                                VerticalAlignment="Center"

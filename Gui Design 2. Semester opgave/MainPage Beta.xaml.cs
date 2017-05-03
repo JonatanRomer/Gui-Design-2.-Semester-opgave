@@ -12,8 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Gui_Design_2.Semester_opgave.Models;
+using GalaSoft.MvvmLight;
+using System.Collections.ObjectModel;
 //using System.Reflection;
-//using System.IO;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,6 +31,8 @@ namespace Gui_Design_2.Semester_opgave
         {
             this.InitializeComponent();
         }
+
+       
 
         /*private void Form1_Load(System.Object sender, System.EventArgs e)
         {
