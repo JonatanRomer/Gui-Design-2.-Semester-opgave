@@ -49,7 +49,8 @@ namespace Gui_Design_2.Semester_opgave.Viewmodels
             menuItems.Add(new MenuItem() { Title = "Påmindelser", NavigateTo = typeof(Påmindelser2) });
             menuItems.Add(new MenuItem() { Title = "Kalender", NavigateTo = typeof(Kalender1) });
             menuItems.Add(new MenuItem() { Title = "Historik", NavigateTo = typeof(Register1) });
-            
+            menuItems.Add(new MenuItem() { Title = "Opret Barn", NavigateTo = typeof(Opret1) });
+
 
             return menuItems;
         }
@@ -57,7 +58,7 @@ namespace Gui_Design_2.Semester_opgave.Viewmodels
         private List<OpretKnapItem> GetKnapper()
         {
             List<OpretKnapItem> knappe = new List<OpretKnapItem>();
-            knappe.Add(new OpretKnapItem() { Title = "Opret Barn", NavigateTo = typeof(Opret1) });
+            knappe.Add(new OpretKnapItem() { Title = "Opret Barn", NavigateTo = (typeof(Opret1)) });
 
             return knappe;
         }

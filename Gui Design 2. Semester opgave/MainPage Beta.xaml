@@ -16,7 +16,7 @@
         </Image>
 
         
-                <ListView x:Name="KnapView" 
+                <ListView x:Name="KnapView"
                   HorizontalAlignment="Left" 
                   Height="80" Margin="10,437,0,0" 
                   VerticalAlignment="Top" 
