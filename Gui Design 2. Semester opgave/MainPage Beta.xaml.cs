@@ -13,9 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Gui_Design_2.Semester_opgave.Models;
-using GalaSoft.MvvmLight;
-using System.Collections.ObjectModel;
-//using System.Reflection;
+using Windows.ApplicationModel.Core;
+using Windows.UI.Core;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -30,32 +29,26 @@ namespace Gui_Design_2.Semester_opgave
         public MainPage_Beta()
         {
             this.InitializeComponent();
+            this.Loaded += MainKnap_Loaded;
+        }
+        
+
+        private void MainKnap_Loaded(object sender, RoutedEventArgs e)
+        {
+            KnapGrid_Tapped(null, null);
         }
 
-       
-
-        /*private void Form1_Load(System.Object sender, System.EventArgs e)
+        private void KnapGrid_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
-            Stream myStream = myAssembly.GetManifestResourceStream("Gui_Design_2.Semester_opgave.Logo_media.png");
-            Bitmap image = new Bitmap(myStream);
+            /*if (KnapPane.IsPaneOpen)
+                KnapPane.IsPaneOpen = !KnapPane.IsPaneOpen;*/
 
-            this.ClientSize = new Size(image.Width, image.Height);
-
-            PictureBox pb = new PictureBox();
-            pd.Image = this.image;
-            pd.Dock = Dockstyle.Fill;
-            this.Controls.Add(pb);
-        }*/
-
-        private void Buttom_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainePage_Beta_2), null);
-        }
-
-        private void Buttom_Click_2(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Opret1), null);
+            OpretKnapItem menu = KnapView.SelectedItem as OpretKnapItem;
+            /*if (menu != null)
+            {
+                if (menu.NavigateTo != null)
+                    CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,() => { FrameContent.Navigate(menu.NavigateTo); });
+            }*/
         }
     }
 }

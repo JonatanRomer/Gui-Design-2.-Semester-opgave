@@ -25,12 +25,12 @@ namespace Gui_Design_2.Semester_opgave.Viewmodels
         public ObservableCollection<OpretKnapItem> KnapItems { get; set; }
 
         //Nyt selescted(somethin)
-        private OpretKnapItem selctedKnapItem;
+        private OpretKnapItem selectedKnapItem;
 
         public OpretKnapItem SelectedKnapItem
         {
-            get { return selctedKnapItem; }
-            set { selctedKnapItem = value; RaisePropertyChanged(); }
+            get { return selectedKnapItem; }
+            set { selectedKnapItem = value; RaisePropertyChanged(); }
         }
         //-----------------------------------------------------------------
 

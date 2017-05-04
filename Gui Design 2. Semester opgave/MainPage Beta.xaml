@@ -14,15 +14,53 @@
                 <ImageBrush Stretch="Fill"/>
             </Image.FocusVisualPrimaryBrush>
         </Image>
-        <ListView x:Name="listView" 
+
+        
+                <ListView x:Name="KnapView" 
                   HorizontalAlignment="Left" 
-                  Height="80" Margin="36,464,0,0" 
+                  Height="80" Margin="10,437,0,0" 
                   VerticalAlignment="Top" 
                   Width="288"
                   Background="{StaticResource MenuBGColorBrush}"
                           ItemContainerStyle="{StaticResource MenuListViewItem}"
                           ItemsSource="{Binding KnapItems}"
-                          SelectedItem="{Binding SelectedKnapItem,Mode=TwoWay}"/>
+                          SelectedItem="{Binding SelectedKnapItem}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                            <Grid x:Name="KnapGrid"
+                                  Margin="0">
+
+                                <Grid.RowDefinitions>
+                            <RowDefinition Height="48" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="48" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="1"
+                                               VerticalAlignment="Center"
+                                               Text="{Binding Title}"
+                                               Margin="10,0,0,0"
+                                               FontSize="16"
+                                               TextTrimming="CharacterEllipsis" />
+
+                        </Grid>
+
+                        <Border Grid.Row="1"
+                                        BorderBrush="#33415B"
+                                        Height="2"
+                                        Margin="0"
+                                        VerticalAlignment="Bottom"
+                                        BorderThickness="0,0,0,1" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
 
     </Grid>
 </Page>
